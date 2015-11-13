@@ -9,6 +9,14 @@ export default function() {
     };
   });
 
+  this.post('/homeworks', function(db, request) {
+    var collection = db.homeworks;
+    var attrs = JSON.parse(request.requestBody).homework;
+    attrs.id = collection.length + 1;
+    var homework = collection.insert(attrs);
+    return homework;
+  });
+
   // These comments are here to help you get started. Feel free to delete them.
 
   /*
