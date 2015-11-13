@@ -1,5 +1,6 @@
 export default function() {
   this.post('/homeworks');
+  this.get('/homeworks');
   this.get('/homeworks/:id');
 
   // can be written as `this.get('/homeworks');`
