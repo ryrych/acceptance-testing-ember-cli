@@ -1,0 +1,9 @@
+<form role="form" {{action 'saveRecord' model on="submit"}}>
+  <label for="title">Title</label>
+  {{input class="homework-title" value=model.title}}
+  <br>
+  <label for="description">Description</label>
+  {{input class="homework-description" value=model.description}}
+  <br>
+  <input type="submit" class="submit-homework">
+</form>

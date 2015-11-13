@@ -6,6 +6,13 @@ var Router = Ember.Router.extend({
 });
 
 Router.map(function() {
+  this.route('homeworks', function() {
+    this.route('new');
+
+    this.route('show', {
+      path: ':id'
+    });
+  });
 });
 
 export default Router;
