@@ -17,6 +17,10 @@ export default function() {
     return homework;
   });
 
+  this.post('http://app.some-fake-domain.com/api/v1/auth/sign_up', function(db, request) {
+    return { status: 'hooray!' };
+  });
+
   // These comments are here to help you get started. Feel free to delete them.
 
   /*

@@ -8,6 +8,6 @@ export default Ember.Route.extend({
   actions: {
     saveRecord(homework) {
       homework.save().then(hw => this.transitionTo('homeworks.show', hw));
-    }
-  }
+    },
+  },
 });
